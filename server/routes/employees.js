@@ -52,11 +52,15 @@ router.delete("/:id", getEmployee, async (req, res) => {
 //Adding one
 
 router.post("/", async (req, res) => {
+  // const employee = new Employee({
+  //   name: req.body.name,
+  //   password: req.body.password,
+  // });
+
   const employee = new Employee({
     name: req.body.name,
-    password: req.body.password,
-  });
-
+    password: req.body.password
+  })
   try {
     const newEmployee = await employee.save();
     res.status(201).json(newEmployee);
