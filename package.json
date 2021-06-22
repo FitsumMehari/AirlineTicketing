@@ -2,6 +2,7 @@
   "name": "airline-ticketing",
   "version": "0.0.0",
   "scripts": {
+    "startdev": "nodemon app.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

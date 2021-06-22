@@ -1,0 +1,28 @@
+GET http://localhost:3000/employees
+
+###
+
+GET http://localhost:3000/employees/60d08998a56f9021cc6084a0
+
+###
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "name": "test",
+    "password": "testpass"
+}
+
+###
+
+DELETE http://localhost:3000/employees/60d0c401ded7e40948c20490
+
+###
+
+PATCH http://localhost:3000/employees/60d0c55961a4bb322c3df59c
+Content-Type: application/json
+
+{
+    "name": "New Test",
+    "password": "new test password"
+}
